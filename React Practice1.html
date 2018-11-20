@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <style>
-      .heaindg {
+      .heading {
         background: black;
       }
     </style>
@@ -30,7 +30,14 @@
     src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
   ></script>
   <script type="text/babel">
-    const myElement = <h1>hiii</h1>;
+    // original javascript syntax that we used before...
+    // const myEle = React.createElement('div',{},'this is a div');
+    // babel JSX syntax that we use now...
+    const myElement = (
+      <div className="heading">
+        <h1>hiii</h1>
+      </div>
+    );
     ReactDOM.render(myElement, document.getElementById("root"));
   </script>
 </html>
