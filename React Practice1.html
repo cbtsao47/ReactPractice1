@@ -11,6 +11,11 @@
       .heading {
         background: black;
       }
+      .btn {
+        border: 1px solid black;
+        border-radius: 1%;
+        background: white;
+      }
     </style>
   </head>
   <body>
@@ -36,19 +41,22 @@
     const MyAge = props => {
       return <h1>30</h1>;
     };
-    const MyComponent = props => {
+    const HelloComponent = props => (
+      <h1>Hello Guys I'm from React Component Land!</h1>
+    );
+    const MyButton = props => <button className="btn">Click Me</button>;
+    const App = props => {
       console.log("props:", props);
       return (
         <div>
           <h1>This is a test</h1>
           <h1>This is a test</h1>
           <MyAge />
+          <HelloComponent />
+          <MyButton />
         </div>
       );
     };
-    ReactDOM.render(
-      <MyComponent name="ryan" />,
-      document.getElementById("root")
-    );
+    ReactDOM.render(<App name="Ben" />, document.getElementById("root"));
   </script>
 </html>

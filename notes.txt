@@ -4,3 +4,4 @@ Since classes ARE functions in js, classes also can be components in react
 ie. const MyFirstReactComponent = props => {
     return <div>My First React Component</div>
 }
+
