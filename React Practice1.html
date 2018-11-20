@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style>
+      .heaindg {
+        background: black;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -20,12 +25,12 @@
     crossorigin
     src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
   ></script>
-  <script type="text/javascript">
-    const myElement = React.createElement("h1", {
-      className: "heading",
-      background: "black",
-      children: "hi guys"
-    });
+  <script
+    crossorigin
+    src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+  ></script>
+  <script type="text/babel">
+    const myElement = <h1>hiii</h1>;
     ReactDOM.render(myElement, document.getElementById("root"));
   </script>
 </html>
