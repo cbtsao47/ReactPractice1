@@ -5,3 +5,9 @@ ie. const MyFirstReactComponent = props => {
     return <div>My First React Component</div>
 }
 
+-Reusability let components do one thing really well. Single Responsibility Principle. Every component does only one thing so it does it really well.
+
+-start by defining the bare minimum the component needs to have in order to function
+-don't over style the component. it's easier to pass in props that trigger classNames for styles
+-don't nest too deep
+-use defaultProps when building a default component that can stand alone.
